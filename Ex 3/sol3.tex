@@ -1,0 +1,114 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage[frenchb]{babel}
+\usepackage{multicol}
+
+\setlength{\textwidth}{16cm}
+\setlength{\textheight}{24cm}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\voffset}{-1.5cm}
+
+\title{Le Petit Chaperon Rouge}
+\author{Charles Perrault}
+\date{(1698)}
+
+\pagenumbering{roman}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\newpage
+\section{Introduction}\label{sectionintro}
+Il était une fois une petite fille de Village, la plus jolie qu'on eût su voir ; sa mère en était folle, et sa mère-grand plus folle encore. Cette bonne femme lui fit faire un petit chaperon rouge, qui lui seyait si bien, que partout on l'appelait le Petit Chaperon rouge.
+
+\subsection{Remarques techniques}
+\begin{itemize}
+\item Les pages sont numérotées en chiffres romains\footnote{En général, la commande correspondante se place dans l'en-tête.}.
+\item La section \ref{sectionintro} est suivie de la section \ref{sectiondepart}, suite à une incrémentation du compteur à l'aide de la commande \verb+\stepcounter+.
+\item Plaçons une énumération dans la liste :
+\begin{enumerate}
+	\item Les rubriques \textsc{Moralité} en fin de document s'obtiennent en définissant un nouvel environnement à l'aide de \verb+\newtheorem+.
+	\item Ajoutons 7 au compteur \texttt{enumi} associé à notre énumération\addtocounter{enumi}{7}.
+	\item Du coup sa valeur courante est \theenumi.
+\end{enumerate}
+\item À partir de la section \ref{sectmeregrand}, tripler la longueur des indentations de paragraphe (modifier la longueur \verb+\parindent+ à l'aide de la commande \verb+\setlength+).
+\end{itemize}
+
+\stepcounter{section}
+\section{Départ pour la forêt}\label{sectiondepart}
+Un jour sa mère ayant cuit et fait des galettes, lui dit :
+Va voir comme se porte ta mère-grand, car on m'a dit qu'elle était malade, porte-lui une galette et ce petit pot de beurre.
+\begin{multicols}{2}
+Le Petit Chaperon rouge partit aussitôt pour aller chez sa mère-grand, qui demeurait dans un autre Village. En passant dans un bois elle rencontra compère le Loup, qui eut bien envie de la manger ; mais il n'osa, à cause de quelques Bûcherons qui étaient dans la Forêt. Il lui demanda où elle allait ; la pauvre enfant, qui ne savait pas qu'il est dangereux de s'arrêter à écouter un Loup, lui dit : Je vais voir ma Mère-grand, et lui porter une galette avec un petit pot de beurre que ma Mère lui envoie.
+\end{multicols}
+
+\subsection{Attention au loup}
+Demeure-t-elle bien loin ? lui dit le Loup. Oh ! oui, dit le Petit Chaperon rouge, c'est par-delà le moulin que vous voyez tout là-bas, là-bas, à la première maison du Village. Eh bien, dit le Loup, je veux l'aller voir aussi ; je m'y en vais par ce chemin ici, et toi par ce chemin-là, et nous verrons qui plus tôt y sera. Le Loup se mit à courir de toute sa force par le chemin qui était le plus court, et la petite fille s'en alla par le chemin le plus long, s'amusant à cueillir des noisettes, à courir après des papillons, et à faire des bouquets des petites fleurs qu'elle rencontrait.
+
+\section{Chez Mère-grand}\label{sectmeregrand}
+\setlength{\parindent}{3\parindent}
+Le Loup ne fut pas longtemps à arriver à la maison de la Mère-grand ; il heurte :
+Toc, toc. Qui est là ? C'est votre fille le Petit Chaperon rouge (dit le Loup, en contrefaisant sa voix) qui vous apporte une galette et un petit pot de beurre que ma Mère vous envoie. La bonne Mère-grand, qui était dans son lit à cause qu'elle se trouvait un peu mal, lui cria : Tire la chevillette, la bobinette cherra.
+Le Loup tira la chevillette et la porte s'ouvrit. Il se jeta sur la bonne femme, et la dévora en moins de rien ; car il y avait plus de trois jours qu'il n'avait mangé. Ensuite il ferma la porte, et s'alla coucher dans le lit de la Mère-grand, en attendant le Petit Chaperon rouge, qui quelque temps après vint heurter à la porte. Toc, toc. Qui est là ?
+
+\subsection{Dénouement}
+Le Petit Chaperon rouge, qui entendit la grosse voix du Loup eut peur d'abord, mais croyant que sa Mère-grand était enrhumée, répondit : C'est votre fille le Petit Chaperon rouge, qui vous apporte une galette et un petit pot de beurre que ma Mère vous envoie. Le Loup lui cria en adoucissant un peu sa voix : Tire la chevillette, la bobinette cherra. Le Petit Chaperon rouge tira la chevillette, et la porte s'ouvrit. Le Loup, la voyant entrer lui dit en se cachant dans le lit sous la couverture : Mets la galette et le petit pot de beurre sur la huche, et viens te coucher avec moi. Le Petit Chaperon rouge se déshabille, et va se mettre dans le lit, où elle fut bien étonnée de voir comment sa Mère-grand était faite en son déshabillé. Elle lui dit :
+\begin{flushleft}
+Ma mère-grand, que vous avez de grands bras ?
+\end{flushleft}
+\begin{center}
+ C'est pour mieux t'embrasser, ma fille.
+\end{center}
+
+\large
+\begin{flushleft}
+Ma mère-grand, que vous avez de grandes jambes ?
+\end{flushleft}
+\begin{center}
+C'est pour mieux courir, mon enfant.
+\end{center}
+
+\Large
+\begin{flushleft}
+Ma mère-grand, que vous avez de grandes oreilles ?
+\end{flushleft}
+\begin{center}
+C'est pour mieux écouter, mon enfant.
+\end{center}
+ 
+\LARGE
+\begin{flushleft}
+Ma mère-grand, que vous avez de grands yeux ?
+\end{flushleft}
+\begin{center}
+C'est pour mieux voir, mon enfant.
+\end{center}
+	 
+\huge
+\begin{flushleft}
+Ma mère-grand, que vous avez de grandes dents ?
+\end{flushleft}
+\begin{center}
+C'est pour te manger.
+\end{center}
+		
+\normalsize
+\noindent
+Et en disant ces mots, ce méchant Loup se jeta sur le Petit Chaperon rouge, et la mangea.
+
+\newtheorem{morale}{Moralité}
+\begin{morale}
+On voit ici que de jeunes enfants, Surtout de jeunes filles Belles, bien faites, et gentilles, Font très mal d'écouter toute sorte de gens, Et que ce n'est pas chose étrange, S'il en est tant que le Loup mange.
+Je dis le Loup, car tous les Loups ne sont pas de la même sorte ; Il en est d'une humeur accorte, Sans bruit, sans fiel et sans courroux, Qui privés, complaisants et doux, Suivent les jeunes Demoiselles jusque dans les maisons, jusque dans les ruelles ; Mais hélas ! qui ne sait que ces loups doucereux, De tous les loups sont les plus dangereux.
+\end{morale}
+
+\begin{morale}
+Au cours de cette leçon, nous avons sans doute appris quelques nouvelles choses à propos de \LaTeX{}.
+\end{morale}
+\end{document}
