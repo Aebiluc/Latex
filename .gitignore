@@ -28,6 +28,8 @@
 *.pdfsync
 *.ps
 *.snm
+*.db
+*.txt
 *.synctex.gz
 *.toc
 *.vrb
